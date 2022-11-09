@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityIndicator" customModule="MenuApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="Vkx-rc-j0R" id="Vj6-r6-ymj"/>
+                <outlet property="contentView" destination="3qr-5e-oGC" id="2cq-mE-ywL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3qr-5e-oGC">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="643"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-hX-6cs">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="643"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Vkx-rc-j0R">
+                            <rect key="frame" x="178" y="303" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vkx-rc-j0R" firstAttribute="centerY" secondItem="7d6-hX-6cs" secondAttribute="centerY" id="ELd-LJ-W0P"/>
+                        <constraint firstItem="Vkx-rc-j0R" firstAttribute="centerX" secondItem="7d6-hX-6cs" secondAttribute="centerX" id="VeR-G5-qap"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Abg-7a-2QO"/>
+            <constraints>
+                <constraint firstItem="Abg-7a-2QO" firstAttribute="trailing" secondItem="7d6-hX-6cs" secondAttribute="trailing" id="HkC-Kh-FVb"/>
+                <constraint firstItem="7d6-hX-6cs" firstAttribute="top" secondItem="3qr-5e-oGC" secondAttribute="top" id="PoY-UT-Ayi"/>
+                <constraint firstAttribute="bottom" secondItem="7d6-hX-6cs" secondAttribute="bottom" id="hwv-Xn-V9p"/>
+                <constraint firstItem="7d6-hX-6cs" firstAttribute="leading" secondItem="Abg-7a-2QO" secondAttribute="leading" id="yNh-9k-QgS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="500" y="62.323943661971832"/>
+        </view>
+    </objects>
+</document>
